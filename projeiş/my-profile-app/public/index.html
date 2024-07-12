@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profil Bilgileri</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Profil Bilgileri</h1>
+        <form id="profileForm">
+            <label for="username">Kullanıcı Adı:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="email">E-posta Adresi:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefon Numarası:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="birthdate">Doğum Tarihi:</label>
+            <input type="date" id="birthdate" name="birthdate" required>
+
+            <label for="profilePicture">Profil Fotoğrafı:</label>
+            <input type="file" id="profilePicture" name="profilePicture" accept="image/*">
+
+            <label for="linkedin">LinkedIn:</label>
+            <input type="url" id="linkedin" name="linkedin">
+
+            <label for="twitter">Twitter:</label>
+            <input type="url" id="twitter" name="twitter">
+
+            <label for="github">GitHub:</label>
+            <input type="url" id="github" name="github">
+
+            <button type="submit">Bilgileri Kaydet</button>
+        </form>
+        
+        <h2>Kayıtlı Profiller</h2>
+        <div id="profiles"></div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
